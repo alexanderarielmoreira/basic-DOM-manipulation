@@ -1,3 +1,19 @@
+<!--
+
+Que es el DOM? (Document Object Model. por sus siglas en inglés)
+
+El DOM es una representación del documento HTML como un grupo de nodos y objetos. 
+Determinando así la forma en la cual se puede acceder y modificar la estructura, contenido 
+y estilo de un documento HTML. En palabras mas sencillas el DOM le dice a un programa como 
+JavaScript que nodo o parte del HTML esta leyendo (como puede ser un párrafo o un titulo o 
+una sección, etc.) y es el mismo DOM el que modela como un objeto (con sus propiedades y métodos) 
+esa parte del documento. Con JS se accede a esas propiedades y se invoca esos métodos para
+modificar, eliminar, crear, etc. elementos en una pagina web.
+
+https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +21,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM manipulation</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="titulo"> 
+        <h1>Manipulación del DOM básico</h1>
+        <h1 class="manidom"></h1>
+    </div> 
+
+    <div class="body">
+        <p class="p1">Esto es un párrafo con clase.</p>
+        <p id="p2">Esto es otro párrafo con ID.</p>
+
+        <!--Form-->
+        <form id="form">
+        <input id="calculo1" type="text" placeholder="Escribeme">
+        <input id="calculo2" type="text" placeholder="Escribeme">
+        <button id="btncalcular">Calcular</button>
+        <p id="result"></p>
+        </form>
+        <!--/Form-->
+
+        <div class="cajita-imagen">
+            <img src="" alt="" id="imagen">
+        
+        </div>
+    </div>
+
+    <script src="./script.js"></script> 
 </body>
 </html>
